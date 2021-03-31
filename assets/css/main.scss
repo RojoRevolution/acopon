@@ -10,9 +10,6 @@
 }
 
 
-
-
-
 html {
     box-sizing: border-box;
   }
@@ -20,9 +17,8 @@ html {
     box-sizing: inherit;
 }
   
-
-  header {
+header {
     //   Simply include the mix in at the top of the class
       @include flexCenter(row); //pass in row as the direction
       //@extend nav; this will take the classes from a different item
-  }
+}
