@@ -6,9 +6,78 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  font-family: "Merriweather", "Georgia", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #3E3F55;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 35px 0 15px;
+}
+
+h2 {
+  font-family: "Merriweather", "Georgia", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #3E3F55;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 5px;
+}
+
+h3 {
+  font-family: "Merriweather", "Georgia", serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4A4A4A;
+  text-align: left;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-family: "Merriweather", "Georgia", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #4A4A4A;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 10px;
+  padding: 0;
+  margin: 10px 0;
+}
+
+p {
+  font-family: "Spectral", "Georgia", serif;
+  font-size: 16px;
+  color: #4A4A4A;
+  line-height: 1.5em;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 25px 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.container {
+  max-width: 1200px;
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1rem;
 }/*# sourceMappingURL=main.css.map */

@@ -9,16 +9,91 @@
     flex-direction: $direction; //You can pass in variables like a function
 }
 
-
+// =========================
+// Universal Elements
+// =========================
 html {
     box-sizing: border-box;
   }
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+h1 {
+  font-family: $merriweather;
+  font-size: 24px;
+  font-weight: 400;
+  color: $primaryBlue;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 35px 0 15px ;
+}
+  
+h2 {
+  font-family: $merriweather;
+  font-size: 40px;
+  font-weight: 700;
+  color: $primaryBlue;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 5px;;
+}
+  
+h3 {
+  font-family: $merriweather;
+  font-size: 20px;
+  font-weight: 400;
+  color: $primaryGrey;
+  text-align: left;
+  line-height: 26px;
+  margin:0;
+  padding:0;
+}
+  
+h4 {
+  font-family: $merriweather;
+  font-size: 18px;
+  font-weight: 700;
+  color: $primaryGrey;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 10px;
+  padding:0;
+  margin:10px 0;
+}
+  
+p {
+  font-family: $spectral;
+  font-size: 16px;
+  color: $primaryGrey;
+  line-height: 1.5em;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding:25px 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.container {
+  max-width: 1200px
+}
+
   
 header {
     //   Simply include the mix in at the top of the class
-      @include flexCenter(row); //pass in row as the direction
+      @include flexCenter(row);
       //@extend nav; this will take the classes from a different item
+  nav{
+    ul {
+      margin:0;
+      padding: 0;
+      position:relative;
+      li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 1rem;
+      }
+    }
+  }
 }
+
