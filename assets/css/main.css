@@ -1,3 +1,11 @@
+.px-20 {
+  padding: 0 20px;
+}
+
+.py-150 {
+  padding: 150px 0;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -75,10 +83,6 @@ main {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
@@ -88,12 +92,21 @@ main {
   width: 100%;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+.grid {
+  display: grid;
+  grid-gap: 20px;
 }
+
+.col-2-left {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.col-2-right {
+  grid-column-start: 6;
+  grid-column-end: 12;
+}
+
 header nav ul {
   margin: 0;
   padding: 0;
@@ -132,4 +145,16 @@ header nav ul li {
   right: 0;
   text-align: center;
   top: 625px;
+}
+
+.aboutBG {
+  background: #F9F9F9;
+}
+
+.aboutContent {
+  max-width: 700px;
+}
+
+.aboutImg {
+  max-width: 375px;
 }/*# sourceMappingURL=main.css.map */

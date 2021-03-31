@@ -1,13 +1,14 @@
 // Can seperate SASS files and simply import them to the main file
 @import './variables';
+@import './helperClasses';
 
 // Mixin works like a function - you can then pass this mixin into a css element and it will take all the properties. For some reason this needs to be above import
-@mixin flexCenter($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction; //You can pass in variables like a function
-}
+// @mixin flexCenter($direction, $align) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: $align;
+//     flex-direction: $direction; //You can pass in variables like a function
+// }
 
 @mixin centerAbsolute() {
   position: absolute;
@@ -97,7 +98,6 @@ main {
 }
 
 .container {
-  @include flexCenter(row);
   position: relative;
   margin: 0 auto;
   max-width: 1200px
@@ -107,13 +107,28 @@ main {
   width: 100%;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.col-2-left {
+  grid-column-start:1;
+  grid-column-end: 6;
+}
+
+.col-2-right {
+  grid-column-start:6;
+  grid-column-end: 12;
+}
+
 // =========================
 // Header
 // =========================
   
 header {
     //   Simply include the mix in at the top of the class
-    @include flexCenter(row);
+    // @include flexCenter(row);
      
       //@extend nav; this will take the classes from a different item
   nav{
@@ -152,4 +167,20 @@ header {
 .introText {
   @include centerAbsolute;
   top: 625px;
+}
+
+// =========================
+// About Section
+// =========================
+
+.aboutBG {
+  background: $bgLight;
+}
+
+.aboutContent {
+  max-width: 700px;
+}
+
+.aboutImg {
+  max-width: 375px;
 }
