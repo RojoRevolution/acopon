@@ -1,13 +1,14 @@
+// Can seperate SASS files and simply import them to the main file
+@import './variables';
 
 // Mixin works like a function - you can then pass this mixin into a css element and it will take all the properties. For some reason this needs to be above import
-@mixin flexCenter {
+@mixin flexCenter($direction) {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: $direction; //You can pass in variables like a function
 }
 
-// Can seperate SASS files and simply import them to the main file
-@import './variables';
 
 
 
@@ -22,5 +23,6 @@ html {
 
   header {
     //   Simply include the mix in at the top of the class
-      @include flexCenter;
+      @include flexCenter(row); //pass in row as the direction
+      //@extend nav; this will take the classes from a different item
   }
