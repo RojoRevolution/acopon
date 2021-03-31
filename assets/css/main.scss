@@ -1,0 +1,26 @@
+
+// Mixin works like a function - you can then pass this mixin into a css element and it will take all the properties. For some reason this needs to be above import
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Can seperate SASS files and simply import them to the main file
+@import './variables';
+
+
+
+
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+
+  header {
+    //   Simply include the mix in at the top of the class
+      @include flexCenter;
+  }
