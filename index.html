@@ -69,7 +69,81 @@
                 </div>
             </div>
         </section>
+        <!-- Location -->
+        <section class="wrapper aboutBG py-150">
+            <div class="container grid">
+                <div class="px-20 col-2-left aboutContent">
+                    <div id="map"></div>
+
+                    <!-- Google Map Script -->
+                    <script>
+                        function initMap() {
+                            var uluru = { lat: 30.192579, lng: -98.089101 };
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 17,
+                                center: uluru,
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                            var noPoi = [
+                                {
+                                    featureType: "poi",
+                                    stylers: [
+                                        { visibility: "off" }
+                                    ]
+                                }
+                            ];
+
+                            map.setOptions({ styles: noPoi });
+                        }
+
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=" + process.env.MAP_API_KEY
+                        + "&callback=initMap">
+                        </script>
+                </div>
+                <div class="px-20 col-2-right aboutImg">
+                    <p>Located in historic downtown Dripping Springs, TX. We are a pet friendly brewpub, with Wood Fired
+                        Pizza available from Sauce It Up.</p>
+
+                    <h3>Address:</h3>
+                    <p><a href="https://www.google.com/maps/place/211+W+Mercer+St,+Dripping+Springs,+TX+78620/@30.1925417,-98.091295,17z/data=!3m1!4b1!4m5!3m4!1s0x865b4178b74f8ead:0x1a60463a75ad603d!8m2!3d30.1925371!4d-98.0891063"
+                            target="_blank">211 W. Mercer St., Dripping Springs, TX 78620</a></p><br>
+                    <h3>Hours:</h3>
+                    <p>Tap room and both patios open for onsite service and to-go orders:<br><br>
+                        Mon-Tues: Closed <br>
+                        Wed-Thurs: 2pm-8pm<br>
+                        Fri-Sat: 12pm-8pm<br>
+                        Sun: 1pm-6pm<br>
+                        <br>Online ordering is still available at the top of the page.
+                    </p><br>
+                    <h3>Inquiries:</h3>
+                    <p>Email us at: <a href="mailto:info@acoponbrewing.com" target="_top">info@acoponbrewing.com</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- On Tap -->
+        <section class="wrapper py-150">
+            <div class="container grid">
+                <div class="px-20 col-1">
+                    <div id="menu-container"></div>
+                </div>
+            </div>
+        </section>
     </main>
+    <div class="preFooter"></div>
+    <footer>
+        <div class="container">
+            <p>©Copyright
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> Acopon Brewing Co. All Rights Reserved.<br>
+            </p>
+        </div>
+    </footer>
+    <script src="assets/js/app.js" type="text/javascript"></script>
 </body>
 
 </html>

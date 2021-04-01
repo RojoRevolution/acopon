@@ -84,7 +84,6 @@ p {
   line-height: 1.5em;
   margin-top: 0px;
   margin-bottom: 15px;
-  padding:25px 0;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -110,6 +109,11 @@ main {
 .grid {
   display: grid;
   grid-gap: 20px;
+}
+
+.col-1 {
+  grid-column-start:1;
+  grid-column-end: 12;
 }
 
 .col-2-left {
@@ -184,3 +188,30 @@ header {
 .aboutImg {
   max-width: 375px;
 }
+
+
+// =========================
+// Location
+// =========================
+
+
+.location {
+  background: $bgGrey;
+}
+
+
+.preFooter {
+  padding: 100px 0;
+  background: url("../images/Footer.png") center bottom no-repeat;
+}
+
+footer {
+  padding:2rem 0;
+  background: $primaryBlue;
+  p {
+    text-align: center;
+    font-size:.75rem;
+    color: $bgLight;
+  }
+}
+
