@@ -46,7 +46,7 @@ h3 {
   color: #4A4A4A;
   text-align: left;
   line-height: 26px;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -60,6 +60,16 @@ h4 {
   line-height: 10px;
   padding: 0;
   margin: 10px 0;
+}
+
+a {
+  color: #3E3F55;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #4d5191;
+  transition: 0.5s;
 }
 
 p {
@@ -124,6 +134,9 @@ header nav ul li {
   list-style: none;
   margin: 0 1rem;
 }
+header nav ul li a {
+  padding: 25px;
+}
 
 .introBg {
   background: url("../images/home_bg.png") center/cover no-repeat;
@@ -165,6 +178,21 @@ header nav ul li {
 
 .location {
   background: #E9E9E9;
+}
+
+.mapCol {
+  width: 600px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+#menu-container {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .preFooter {
