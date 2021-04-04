@@ -2,8 +2,28 @@
   padding: 0 20px;
 }
 
+.pt-50 {
+  padding-top: 50px;
+}
+
+.py-50 {
+  padding: 50px 0;
+}
+
 .py-150 {
   padding: 150px 0;
+}
+
+.disp-inline {
+  display: inline-block;
+}
+
+.disp-none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 html {
@@ -121,10 +141,16 @@ main {
   grid-column-end: 12;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
 header nav ul {
   margin: 0;
   padding: 0;
   position: relative;
+  text-align: center;
 }
 header nav ul li {
   font-family: "Spectral", "Georgia", serif;
@@ -133,9 +159,16 @@ header nav ul li {
   display: inline-block;
   list-style: none;
   margin: 0 1rem;
+  padding: 20px 5px;
 }
 header nav ul li a {
-  padding: 25px;
+  font-family: "Spectral", "Georgia", serif;
+  padding: 50px;
+  text-decoration: none;
+}
+
+#empty {
+  display: none;
 }
 
 .introBg {
@@ -152,6 +185,13 @@ header nav ul li a {
   text-align: center;
   top: 175px;
   max-width: 425px;
+  transition: 0.5s;
+}
+
+.logoScroll {
+  top: 20px;
+  max-width: 150px;
+  transition: 0.5s;
 }
 
 .introText {
@@ -208,4 +248,22 @@ footer p {
   text-align: center;
   font-size: 0.75rem;
   color: #F9F9F9;
+}
+footer .social {
+  margin: 5px;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+}
+footer .socialImg {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 35px;
+  cursor: pointer;
+}
+footer .socialImg:hover {
+  top: -35px;
 }/*# sourceMappingURL=main.css.map */

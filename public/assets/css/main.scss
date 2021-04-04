@@ -19,6 +19,7 @@
   text-align: center;
 }
 
+
 // =========================
 // Universal Elements
 // =========================
@@ -141,6 +142,9 @@ main {
 // =========================
   
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
     //   Simply include the mix in at the top of the class
     // @include flexCenter(row);
      
@@ -150,6 +154,7 @@ header {
       margin:0;
       padding: 0;
       position:relative;
+      text-align: center;
       li {
         font-family: $spectral;
         font-weight: 700;
@@ -157,12 +162,19 @@ header {
         display: inline-block;
         list-style: none;
         margin: 0 1rem;
+        padding: 20px 5px;
       }
       li a {
-        padding:25px;
+        font-family: $spectral;
+        padding:50px;
+        text-decoration: none;
       }
     }
   }
+}
+
+#empty {
+  display: none;
 }
 
 
@@ -179,6 +191,13 @@ header {
   @include centerAbsolute;
   top: 175px;
   max-width: 425px;
+  transition:.5s;
+}
+
+.logoScroll {
+  top: 20px;
+  max-width: 150px;
+  transition:.5s;
 }
 
 .introText {
@@ -240,6 +259,24 @@ footer {
     text-align: center;
     font-size:.75rem;
     color: $bgLight;
+  }
+  .social {
+    margin: 5px;
+    position: relative;
+    width: 35px;
+    height:35px;
+    overflow:hidden;
+  }
+  .socialImg {
+    position:absolute;
+    display: inline-block;
+    top:0;
+    left: 0;
+    width:35px;
+    cursor: pointer;
+  }
+  .socialImg:hover {
+    top:-35px;
   }
 }
 
