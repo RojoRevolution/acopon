@@ -22,20 +22,15 @@
 <body>
     <header>
         <div class="container">
-            <nav>
+            <nav id="mainNav">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li>
-                        <div class="logo">
-                            <img id="logoIcon" src="assets/images/acopon_icon.png" class="img"
-                                alt="Acopon Brewing Co. Logo Icon">
-                            <img id="logoText" src="assets/images/acopon_logo_text.png" class="img"
-                                alt="Acopon Brewing Co. Logo Text">
-                        </div>
+                    <li id="about"'><a href="#">About</a></li>
+                    <li id="location"><a href="#">Location</a></li>
+                    <li id="home" class="headerLogo hide">
+                        <img src="assets/images/acopon_header.svg" alt="Acopon Brewing Co. Logo" class="img">
                     </li>
-                    <li><a href="#">Beer</a></li>
-                    <li><a href="#">Order Online</a></li>
+                    <li id="beer"><a href="#">Beer</a></li>
+                    <li id="order"><a href="#">Order Online</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,12 +39,12 @@
         <!-- Intro -->
         <section class="wrapper introBg">
             <div class="container">
-                <!-- <div class="logo">
+                <div class="logo">
                     <img id="logoIcon" src="assets/images/acopon_icon.png" class="img"
                         alt="Acopon Brewing Co. Logo Icon">
                     <img id="logoText" src="assets/images/acopon_logo_text.png" class="img"
                         alt="Acopon Brewing Co. Logo Text">
-                </div> -->
+                </div>
                 <div class="introText">
                     <h1> Ales To Restore The Spirit</h1>
                 </div>
@@ -67,15 +62,15 @@
 
                         At Acopon Brewing Co., English ales are our specialty, and we tap fresh casks every week. That’s
                         not to say English ales are all we ever brew. Good beer is good beer. We love everything from
-                        hoppy west-coast style IPA's to big bold Russian Imperial Stouts, and you’ll find them all on
+                        hoppy west-coast style IPA' s to big bold Russian Imperial Stouts, and you’ll find them all on
                         tap at Acopon.<br><br>
 
                         Stop by for an ale to restore your mind, body and spirit.</p>
-                </div>
-                <div class="px-20 col-2-right aboutImg">
-                    <img src="assets/images/about2.png" class="img" alt="Pint glass of delicious beer">
-                </div>
-            </div>
+        </div>
+        <div class="px-20 col-2-right aboutImg">
+            <img src="assets/images/about2.png" class="img" alt="Pint glass of delicious beer">
+        </div>
+        </div>
         </section>
         <!-- Location -->
         <section class="wrapper location py-150">
@@ -113,32 +108,33 @@
                 </div>
             </div>
         </section>
-    </main>
-    <div class="preFooter"></div>
-    <footer>
-        <div class="container">
-            <div class="text-center">
-                <div class="disp-inline">
-                    <div class="social"><img class="socialImg" src="./assets/images/instagram_sprite_footer.svg"></div>
+        </main>
+        <div class="preFooter"></div>
+        <footer>
+            <div class="container">
+                <div class="text-center">
+                    <div class="disp-inline">
+                        <div class="social"><img class="socialImg" src="./assets/images/instagram_sprite_footer.svg">
+                        </div>
+                    </div>
+                    <div class="disp-inline">
+                        <div class="social"><img class="socialImg" src="./assets/images/fb_sprite_footer.svg"></div>
+                    </div>
                 </div>
-                <div class="disp-inline">
-                    <div class="social"><img class="socialImg" src="./assets/images/fb_sprite_footer.svg"></div>
+                <div class="pt-50">
+                    <p>©Copyright
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                        </script> Acopon Brewing Co. All Rights Reserved.<br>
+                    </p>
                 </div>
             </div>
-            <div class="pt-50">
-                <p>©Copyright
-                    <script type="text/javascript">
-                        document.write(new Date().getFullYear());
-                    </script> Acopon Brewing Co. All Rights Reserved.<br>
-                </p>
-            </div>
-        </div>
-    </footer>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6SM9GDsAP59A1FUN-cOtnXV29nb4heTk&callback=initMap">
-        </script>
-    <script src="assets/js/thirdParty.js" type="text/javascript"></script>
-    <script src="assets/js/app.js" type="text/javascript"></script>
+        </footer>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6SM9GDsAP59A1FUN-cOtnXV29nb4heTk&callback=initMap">
+            </script>
+        <script src="assets/js/thirdParty.js" type="text/javascript"></script>
+        <script src="assets/js/app.js" type="text/javascript"></script>
 </body>
 
 </html>

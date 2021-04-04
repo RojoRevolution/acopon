@@ -161,7 +161,8 @@ header {
         text-transform: uppercase;
         display: inline-block;
         list-style: none;
-        margin: 0 1rem;
+        vertical-align: middle;
+        margin: 0 .25rem;
         padding: 20px 5px;
       }
       li a {
@@ -171,6 +172,10 @@ header {
       }
     }
   }
+}
+
+.headerLogo {
+  max-width: 150px;
 }
 
 #empty {
@@ -183,7 +188,7 @@ header {
 // =========================
 
 .introBg {
-  background: url('../images/home_bg.png') center/cover no-repeat;
+  background: url('../images/home_bg.png') center/cover no-repeat fixed;
   height: 100vh;
 }
 
@@ -191,7 +196,7 @@ header {
   @include centerAbsolute;
   top: 175px;
   max-width: 425px;
-  transition:.5s;
+
 }
 
 .logoScroll {

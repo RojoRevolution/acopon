@@ -14,11 +14,11 @@
   padding: 150px 0;
 }
 
-.disp-inline {
+.show {
   display: inline-block;
 }
 
-.disp-none {
+.hide {
   display: none;
 }
 
@@ -158,7 +158,8 @@ header nav ul li {
   text-transform: uppercase;
   display: inline-block;
   list-style: none;
-  margin: 0 1rem;
+  vertical-align: middle;
+  margin: 0 0.25rem;
   padding: 20px 5px;
 }
 header nav ul li a {
@@ -167,12 +168,16 @@ header nav ul li a {
   text-decoration: none;
 }
 
+.headerLogo {
+  max-width: 150px;
+}
+
 #empty {
   display: none;
 }
 
 .introBg {
-  background: url("../images/home_bg.png") center/cover no-repeat;
+  background: url("../images/home_bg.png") center/cover no-repeat fixed;
   height: 100vh;
 }
 
@@ -185,7 +190,6 @@ header nav ul li a {
   text-align: center;
   top: 175px;
   max-width: 425px;
-  transition: 0.5s;
 }
 
 .logoScroll {
