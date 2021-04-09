@@ -16,9 +16,11 @@
 
 .show {
   display: inline-block;
+  transition: 0.5s;
 }
 
 .hide {
+  transition: 0.5s;
   display: none;
 }
 
@@ -162,15 +164,19 @@ header nav ul li {
   vertical-align: middle;
   margin: 0 0.25rem;
   padding: 20px 5px;
+  transition: 0.5s;
 }
 header nav ul li a {
   font-family: "Spectral", "Georgia", serif;
-  padding: 50px;
+  margin: 50px;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .headerLogo {
+  cursor: pointer;
   max-width: 150px;
+  padding: 5px;
 }
 
 #empty {

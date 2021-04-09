@@ -48,9 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
-    if (window.scrollY >= 400) {
-        headerLogoEl.classList.toggle("hide")
-    }
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 400) {
+            headerLogoEl.classList.remove("hide")
+        }
+        if (window.scrollY <= 400) {
+            headerLogoEl.classList.add("hide")
+        }
+
+    })
 
 
 

@@ -165,18 +165,22 @@ header {
         vertical-align: middle;
         margin: 0 .25rem;
         padding: 20px 5px;
+        transition: .5s;
       }
       li a {
         font-family: $spectral;
-        padding:50px;
+        margin:50px;
         text-decoration: none;
+        transition:.5s;
       }
     }
   }
 }
 
 .headerLogo {
+  cursor: pointer;
   max-width: 150px;
+  padding: 5px;
 }
 
 #empty {

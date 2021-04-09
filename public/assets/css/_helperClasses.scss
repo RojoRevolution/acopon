@@ -16,9 +16,11 @@
 
 .show {
     display: inline-block;
+    transition: .5s;
 }
 
 .hide {
+    transition: .5s;
     display: none;
 }
 
