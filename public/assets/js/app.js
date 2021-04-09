@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const OrderNav = document.querySelector(".order")
 
     // Content Elements
-    const introSection = document.getElementById("introSection")
-    const aboutSection = document.getElementById("aboutSection")
-    const locationSection = document.getElementById("locationSection")
-    const onTapSection = document.getElementById("onTapSection")
+    const home = document.getElementById("home")
+    const about = document.getElementById("about")
+    const location = document.getElementById("location")
+    const onTap = document.getElementById("onTap")
 
     // let topPosition = 175;
     // let maxWidth = 425;
@@ -45,6 +45,21 @@ document.addEventListener("DOMContentLoaded", () => {
         let navItem = event.target.parentElement.className;
         console.log("click", navItem)
         // console.log(navItem)
+        switch (navItem) {
+            case "home":
+                window.scrollTo(0, findPos(home))
+                break;
+            case "about":
+                window.scrollTo(0, findPos(about))
+                break;
+            case "location":
+                window.scrollTo(0, findPos(location))
+                break;
+            case "onTap":
+                window.scrollTo(0, findPos(onTap))
+                break;
+        }
+
         // window.scrollTo(0, findPos(navItem))
 
     })
