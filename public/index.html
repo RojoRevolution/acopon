@@ -24,12 +24,14 @@
         <div class="container">
             <nav id="mainNav">
                 <ul>
-                    <li class="about"'><a href="#aboutSection">About</a></li>
-                    <li class="location"><a href="#locationSection">Location</a></li>
-                    <li class="home" class="headerLogo hide">
-                        <img src="assets/images/acopon_header.svg" alt="Acopon Brewing Co. Logo" class="img">
+                    <li class="about"'><a href="#aboutSection"onclick="return false;">About</a></li>
+                    <li class="location"><a href="#locationSection" onclick="return false;">Location</a></li>
+                    <li class="home">
+                        <div id="headerLogo" class="headerLogo hide">
+                        <a href="#home" onclick="return false;"><img src="assets/images/acopon_header.svg" alt="Acopon Brewing Co. Logo" class="img"></a>
+                        </div>
                     </li>
-                    <li class="onTap"><a href="#onTapSection">Beer</a></li>
+                    <li class="onTap"><a href="#onTapSection" onclick="return false;">Beer</a></li>
                     <li class="order"><a href="#">Order Online</a></li>
                 </ul>
             </nav>
@@ -73,7 +75,7 @@
         </div>
         </section>
         <!-- Location -->
-        <section id="location" class="wrapper location py-150">
+        <section id="location" class="wrapper locationSection py-150">
             <div class="container grid">
                 <div class="px-20 col-2-left mapCol">
                     <div id="map">

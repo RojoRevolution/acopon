@@ -28,6 +28,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -220,7 +221,7 @@ header nav ul li a {
   max-width: 375px;
 }
 
-.location {
+.locationSection {
   background: #E9E9E9;
 }
 
