@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const logoDiv = document.getElementById("logo")
-    const logoIcon = document.getElementById("logoIcon")
-    const logoText = document.getElementById("logoText")
+    const logoDiv = document.querySelector(".logo")
+    const headerGradientDiv = document.querySelector(".headerGradient")
+    const sloganText = document.querySelector(".introText")
     const navItems = document.getElementById("mainNav")
     const headerLogoEl = document.getElementById("headerLogo")
-
-    // Navigation Elements
-
 
     // Content Elements
     const home = document.getElementById("home")
@@ -49,11 +46,20 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 400) {
-            headerLogoEl.classList.remove("hide")
+        if (window.scrollY >= 200) {
+            logoDiv.style.opacity = "0";
+            sloganText.style.opacity = "0";
         }
-        if (window.scrollY <= 400) {
-            headerLogoEl.classList.add("hide")
+        if (window.scrollY >= 400) {
+            headerGradientDiv.classList.remove("hide");
+            headerLogoEl.classList.remove("hide");
+        }
+        if (window.scrollY <= 200) {
+            headerGradientDiv.classList.add("hide");
+            headerLogoEl.classList.add("hide");
+            logoDiv.style.opacity = "1";
+            sloganText.style.opacity = "1";
+
         }
 
     })
