@@ -24,20 +24,20 @@
         <div class="container">
             <nav id="mainNav">
                 <ul>
-                    <li id="about"'><a href="#">About</a></li>
-                    <li id="location"><a href="#">Location</a></li>
-                    <li id="home" class="headerLogo hide">
+                    <li class="about"'><a href="#aboutSection">About</a></li>
+                    <li class="location"><a href="#locationSection">Location</a></li>
+                    <li class="home" class="headerLogo hide">
                         <img src="assets/images/acopon_header.svg" alt="Acopon Brewing Co. Logo" class="img">
                     </li>
-                    <li id="beer"><a href="#">Beer</a></li>
-                    <li id="order"><a href="#">Order Online</a></li>
+                    <li class="onTap"><a href="#onTapSection">Beer</a></li>
+                    <li class="order"><a href="#">Order Online</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <!-- Intro -->
-        <section class="wrapper introBg">
+        <section id="home" class="wrapper introBg">
             <div class="container">
                 <div class="logo">
                     <img id="logoIcon" src="assets/images/acopon_icon.png" class="img"
@@ -51,7 +51,7 @@
             </div>
         </section>
         <!-- About -->
-        <section class="wrapper aboutBG py-150">
+        <section id="about" class="wrapper aboutBG py-150">
             <div class="container grid">
                 <div class="px-20 col-2-left aboutContent">
                     <h2>Acopon</h2>
@@ -73,7 +73,7 @@
         </div>
         </section>
         <!-- Location -->
-        <section class="wrapper location py-150">
+        <section id="location" class="wrapper location py-150">
             <div class="container grid">
                 <div class="px-20 col-2-left mapCol">
                     <div id="map">
@@ -101,7 +101,7 @@
             </div>
         </section>
         <!-- On Tap -->
-        <section class="wrapper py-150">
+        <section id="onTap" class="wrapper py-150">
             <div class="container grid">
                 <div class="px-20 col-1">
                     <div id="menu-container"></div>
