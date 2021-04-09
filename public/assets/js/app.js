@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const logoDiv = document.querySelector(".logo")
-    const headerGradientDiv = document.querySelector(".headerGradient")
-    const sloganText = document.querySelector(".introText")
-    const navItems = document.getElementById("mainNav")
-    const headerLogoEl = document.getElementById("headerLogo")
+    const logoDiv = document.querySelector(".logo");
+    const headerGradientDiv = document.querySelector(".headerGradient");
+    const sloganText = document.querySelector(".introText");
+    const navItems = document.getElementById("mainNav");
+    const headerLogoEl = document.getElementById("headerLogo");
+    const orderNavItem = document.querySelector(".order");
+    const orderMenu = document.getElementById("orderMenu");
+    const dropDownMenu = document.querySelector(".orderDropDown");
 
     // Content Elements
     const home = document.getElementById("home")
@@ -42,8 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             case "onTap":
                 window.scrollTo(0, findPos(onTap))
                 break;
-        }
-    })
+        })
 
     window.addEventListener('scroll', () => {
         if (window.scrollY >= 200) {
@@ -61,9 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
             sloganText.style.opacity = "1";
 
         }
-
     })
 
+    orderNavItem.addEventListener('click', () => {
+        orderMenu.classList.toggle('hide')
+    })
 
 
 });
