@@ -180,6 +180,11 @@ header {
   }
 }
 
+#orderNavId {
+  color: $primaryBlue;
+  cursor: pointer;
+}
+
 .headerLogo {
   cursor: pointer;
   max-width: 100px;
@@ -317,23 +322,24 @@ footer {
     font-size:.75rem;
     color: $bgLight;
   }
-  .social {
-    margin: 5px;
-    position: relative;
-    width: 35px;
-    height:35px;
-    overflow:hidden;
-  }
-  .socialImg {
-    position:absolute;
-    display: inline-block;
-    top:0;
-    left: 0;
-    width:35px;
-    cursor: pointer;
-  }
-  .socialImg:hover {
-    top:-35px;
-  }
+}
+
+.social {
+  margin: 5px;
+  position: relative;
+  width: 35px;
+  height:35px;
+  overflow:hidden;
+}
+.socialImg {
+  position:absolute;
+  display: inline-block;
+  top:0;
+  left: 0;
+  width:35px;
+  cursor: pointer;
+}
+.socialImg:hover {
+  top:-35px;
 }
 

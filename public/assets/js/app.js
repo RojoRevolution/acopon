@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navItems = document.getElementById("mainNav");
     const headerLogoEl = document.getElementById("headerLogo");
     const orderNavItem = document.querySelector(".order");
+    const orderNavId = document.getElementsByName("orderNavId");
     const orderMenu = document.getElementById("orderMenu");
     const dropDownMenu = document.querySelector(".orderDropDown");
 
@@ -66,9 +67,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
-    orderNavItem.addEventListener('click', () => {
+    orderNavItem.addEventListener('click', (event) => {
+        console.log(event.target.id)
         orderMenu.classList.toggle('hide');
+
     });
 
+    // if (!orderMenu.classList.contains('hide')) {
+    //     window.addEventListener('click', () => {
+    //         console.log("CLICK")
+    //         orderMenu.classList.toggle('hide');
+    //     })
+    // }
 
 });

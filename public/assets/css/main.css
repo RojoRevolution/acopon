@@ -188,6 +188,11 @@ header nav ul li a:hover {
   transition: 0.25s;
 }
 
+#orderNavId {
+  color: #3E3F55;
+  cursor: pointer;
+}
+
 .headerLogo {
   cursor: pointer;
   max-width: 100px;
@@ -320,14 +325,16 @@ footer p {
   font-size: 0.75rem;
   color: #F9F9F9;
 }
-footer .social {
+
+.social {
   margin: 5px;
   position: relative;
   width: 35px;
   height: 35px;
   overflow: hidden;
 }
-footer .socialImg {
+
+.socialImg {
   position: absolute;
   display: inline-block;
   top: 0;
@@ -335,6 +342,7 @@ footer .socialImg {
   width: 35px;
   cursor: pointer;
 }
-footer .socialImg:hover {
+
+.socialImg:hover {
   top: -35px;
 }/*# sourceMappingURL=main.css.map */
