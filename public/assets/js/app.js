@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
             case "onTap":
                 window.scrollTo(0, findPos(onTap))
                 break;
-        })
+        }
+    })
 
     window.addEventListener('scroll', () => {
         if (window.scrollY >= 200) {
@@ -66,8 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     orderNavItem.addEventListener('click', () => {
-        orderMenu.classList.toggle('hide')
-    })
+        orderMenu.classList.toggle('hide');
+    });
 
 
 });

@@ -36,6 +36,10 @@
   position: absolute;
 }
 
+.disp-inline {
+  display: inline-block;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
