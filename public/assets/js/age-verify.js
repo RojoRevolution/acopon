@@ -82,10 +82,11 @@ av_showRegret = function () {
 };
 
 av_positionPrompt = function () {
-    var top = ($(window).outerHeight() - $('#modal_content').outerHeight()) / 2;
+    // var top = ($(window).outerHeight() - $('#modal_content').outerHeight()) / 2;
     var left = ($(window).outerWidth() - $('#modal_content').outerWidth()) / 2;
     modal_content.css({
-        'top': top,
+        // 'top': top,
+        'top': '20px',
         'left': left
     });
 

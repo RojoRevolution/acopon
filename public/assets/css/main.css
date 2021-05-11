@@ -67,7 +67,7 @@
   margin: 0 auto;
   background-color: transparent;
   border: none;
-  width: 290px;
+  max-width: 500px;
   /*height: 290px;*/
 }
 
@@ -101,19 +101,18 @@
 
 #modal_content nav {
   font-size: 16px;
-  display: table;
   width: 100%;
+  margin-top: 20px;
 }
 
 #modal_content nav ul {
-  display: table-row;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
 #modal_content nav li {
-  display: table-cell;
+  display: inline-block;
   text-align: center;
   width: auto;
 }
@@ -134,7 +133,7 @@
 #modal_content nav a.av_btn {
   display: block;
   text-decoration: none;
-  padding: 1em;
+  padding: 1em 1em;
   color: #fff;
   font-family: "Spectral", "Georgia", serif;
   font-size: 16px;
@@ -144,7 +143,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 1px solid #fff;
-  width: 150px;
+  width: 200px;
 }
 
 #modal_content nav .av_go {
@@ -169,13 +168,12 @@
 
 @media (min-width: 688px) {
   #modal_content {
-    top: 10em;
     top: 30vh;
     left: 30vw;
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 600px;
     height: 500px;
-    padding: 3em;
+    padding: 2em;
     font-size: 16px;
   }
 
@@ -194,8 +192,9 @@
   }
 
   #modal_content nav {
-    width: 375px;
-    padding: 0 10%;
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
   }
 
   /*#modal_content nav a.av_btn {
