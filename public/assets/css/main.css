@@ -219,7 +219,7 @@ body {
 
 h1 {
   font-family: "Merriweather", "Georgia", serif;
-  font-size: 24px;
+  font-size: 2.5rem;
   font-weight: 400;
   color: #3E3F55;
   text-align: center;
@@ -229,7 +229,7 @@ h1 {
 
 h2 {
   font-family: "Merriweather", "Georgia", serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #3E3F55;
   text-transform: uppercase;
@@ -239,11 +239,11 @@ h2 {
 
 h3 {
   font-family: "Merriweather", "Georgia", serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   color: #4A4A4A;
   text-align: left;
-  line-height: 26px;
+  line-height: 3rem;
   margin: 10px 0;
   padding: 0;
 }
@@ -255,7 +255,7 @@ h4 {
   color: #4A4A4A;
   text-align: left;
   text-transform: uppercase;
-  line-height: 10px;
+  line-height: 3rem;
   padding: 0;
   margin: 10px 0;
 }
@@ -323,6 +323,14 @@ main {
 .col-2-right {
   grid-column-start: 6;
   grid-column-end: 12;
+}
+
+.col-2-right h3 {
+  margin-top: 1.5rem;
+}
+
+.col-2-right h3:first-of-type {
+  margin-top: 0;
 }
 
 header {
@@ -427,6 +435,22 @@ header nav ul li a:hover {
   max-width: 375px;
 }
 
+#location h2 {
+  font-size: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 20px 0;
+}
+
+.location-intro {
+  padding: 0 0 2rem 0;
+  text-align: center;
+}
+
+.location-intro p {
+  text-align: center;
+}
+
 .locationSection {
   background: #E9E9E9;
 }
@@ -521,11 +545,11 @@ footer p {
 }
 @media screen and (max-width: 500px) {
   .mapCol {
-    width: 375px;
+    width: 400px;
   }
 }
 @media screen and (max-width: 400px) {
   .mapCol {
-    width: 300px;
+    width: 370px;
   }
 }/*# sourceMappingURL=main.css.map */
