@@ -293,10 +293,16 @@ main {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
+  padding: 20px;
 }
 
 .img {
   width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .grid {
@@ -429,10 +435,20 @@ header nav ul li a:hover {
   width: 600px;
 }
 
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
 #map {
-  width: 100%;
-  height: 400px;
   background-color: grey;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 #menu-container {
@@ -474,4 +490,42 @@ footer p {
 
 .socialImg:hover {
   top: -35px;
+}
+
+@media screen and (max-width: 1024px) {
+  .mapCol {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mapCol {
+    width: 580px;
+    margin: 0 auto;
+  }
+
+  .col-2-left {
+    grid-column-start: 1;
+    grid-column-end: 12;
+  }
+
+  .col-2-right {
+    padding: 30px;
+    grid-column-start: 1;
+    grid-column-end: 12;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mapCol {
+    width: 490px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mapCol {
+    width: 375px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mapCol {
+    width: 300px;
+  }
 }/*# sourceMappingURL=main.css.map */

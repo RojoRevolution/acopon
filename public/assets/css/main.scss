@@ -2,7 +2,7 @@
 @import './variables';
 @import './helperClasses';
 @import './age-verify';
-@import './mediaQueries';
+
 
 // Mixin works like a function - you can then pass this mixin into a css element and it will take all the properties. For some reason this needs to be above import
 // @mixin flexCenter($direction, $align) {
@@ -113,11 +113,17 @@ main {
 .container {
   position: relative;
   margin: 0 auto;
-  max-width: 1200px
+  max-width: 1200px;
+  padding:20px;
 }
 
 .img {
   width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .grid {
@@ -264,10 +270,22 @@ header {
   width: 600px;
 }
 
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
 #map {
-  width: 100%;
-  height: 400px;
+  // width: 100%;
+  // height: 400px;
   background-color: grey;
+  left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 #menu-container {
@@ -309,3 +327,7 @@ footer {
 .socialImg:hover {
   top:-35px;
 }
+
+
+// MEDIA QUERIES
+@import './mediaQueries';
