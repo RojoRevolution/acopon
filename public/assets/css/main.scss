@@ -2,7 +2,7 @@
 @import './variables';
 @import './helperClasses';
 @import './age-verify';
-
+@import './side-nav';
 
 // Mixin works like a function - you can then pass this mixin into a css element and it will take all the properties. For some reason this needs to be above import
 // @mixin flexCenter($direction, $align) {
@@ -114,7 +114,7 @@ main {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
-  padding:20px;
+  padding:0 20px 20px 20px;
 }
 
 .img {

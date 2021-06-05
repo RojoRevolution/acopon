@@ -203,6 +203,66 @@
   	font-size: 1em;
   }*/
 }
+.mobile-menu {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: none;
+}
+
+.fa, .fas {
+  color: #3E3F55;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa, .fas:hover {
+  color: #4d5191;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -293,7 +353,7 @@ main {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .img {
@@ -522,6 +582,18 @@ footer p {
   }
 }
 @media screen and (max-width: 768px) {
+  #primary-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .aboutImg {
+    margin: 0 auto;
+  }
+
   .mapCol {
     width: 580px;
     margin: 0 auto;

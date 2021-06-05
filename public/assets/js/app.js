@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Event listener for all nav items using event delegation
     navItems.addEventListener('click', (event) => {
+        console.log(event.className)
         let navItem = event.target.parentElement.className;
+        console.log(navItem)
         switch (navItem) {
             case "home":
                 window.scrollTo(0, findPos(home))
@@ -67,11 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
-    orderNavItem.addEventListener('click', (event) => {
-        console.log(event.target.id)
-        orderMenu.classList.toggle('hide');
+    // orderNavItem.addEventListener('click', (event) => {
+    //     console.log(event.target.id)
+    //     orderMenu.classList.toggle('hide');
 
-    });
+    // });
 
     // if (!orderMenu.classList.contains('hide')) {
     //     window.addEventListener('click', () => {

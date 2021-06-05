@@ -4,6 +4,18 @@
   }
 }
 @media screen and (max-width: 768px) {
+  #primary-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .aboutImg {
+    margin: 0 auto;
+  }
+
   .mapCol {
     width: 580px;
     margin: 0 auto;
