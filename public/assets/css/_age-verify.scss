@@ -9,7 +9,8 @@
 	height: 100%;
 	width: 100%;
 	z-index: 1100;
-	background-color: rgba(0,0,0,.95);
+	background-image:url(../images/acopon_pattern_250x250.png);
+	background-color: $primaryBlue;
 }
 
 #modal_screen.nope {
@@ -27,12 +28,14 @@
 	background-color:transparent;
 	border:none;
 	max-width:500px;
-	/*height: 290px;*/
 }
 
 #modal_content .content_wrapper {
 	margin:2em auto 0;
 	text-align: center;
+	background-color: $primaryBlue;
+	padding:20px;
+	border: 5px solid $bgLight;
 }
 
 #modal_content h2 {
@@ -111,42 +114,4 @@
 	width:130px;
 	font-size: 0.8em;
 
-}
-
-@media (min-width: 688px) {
-	#modal_content {
-		top: 30vh;
-		left: 30vw;
-		width: 100%;
-		max-width: 600px;
-		height:500px;
-		padding:2em;
-		font-size: 16px;
-	}
-
-	#modal_content .content_wrapper {
-		padding-top: 0;
-		margin:1em auto 0;
-		text-align: center;
-	}
-
-	#modal_content h2 {
-		margin: 0 0 0 0;
-	}
-
-	#modal_content p {
-		line-height: 1.9em;
-	}
-
-	#modal_content nav {
-        width: 500px;
-		padding: 20px;
-		margin: 0 auto;
-    }
-
-	/*#modal_content nav a.av_btn {
-		padding:1em 2.5em;
-		margin:1.6em auto 0;
-		font-size: 1em;
-	}*/
 }

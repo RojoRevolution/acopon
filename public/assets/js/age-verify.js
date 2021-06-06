@@ -30,7 +30,7 @@ av_showmodal = function () {
     var modal_regret_wrapper = $('<div id="modal_regret_wrapper" class="content_wrapper" style="display:none;"></div>');
 
     // Question Content
-    var content_heading = $('<img src="../assets/images/verify.png" width="75%" style="margin-bottom:20px;"/><h2>Are You Over 21?</h2>');
+    var content_heading = $('<img src="../assets/images/verify.png" width="75%" style="margin-bottom:20px;"/><h2>Art Ye Over 21?</h2>');
     var content_buttons = $('<nav><ul><li><a href="#nothing" class="av_btn av_go" rel="yes">Indubitably</a></li><li><a href="#nothing" class="av_btn av_no" rel="no">Nay, I Say</a></li></nav>');
     var content_text = $('');
 
@@ -85,7 +85,6 @@ av_positionPrompt = function () {
     // var top = ($(window).outerHeight() - $('#modal_content').outerHeight()) / 2;
     var left = ($(window).outerWidth() - $('#modal_content').outerWidth()) / 2;
     modal_content.css({
-        // 'top': top,
         'top': '20px',
         'left': left
     });

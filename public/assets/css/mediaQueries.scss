@@ -39,6 +39,37 @@
       }
 }
 
+@media (min-width: 688px) {
+	#modal_content {
+		top: 30vh;
+		left: 30vw;
+		width: 100%;
+		max-width: 600px;
+		height:500px;
+		padding:2em;
+		font-size: 16px;
+	}
+
+	#modal_content .content_wrapper {
+		margin:1em auto 0;
+		text-align: center;
+	}
+
+	#modal_content h2 {
+		margin: 0 0 0 0;
+	}
+
+	#modal_content p {
+		line-height: 1.9em;
+	}
+
+	#modal_content nav {
+        width: 500px;
+		padding: 20px;
+		margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 2rem;
@@ -46,10 +77,12 @@
         
     h2 {
         font-size: 2rem;
+        line-height: 2.75rem;
     }
         
     h3 {
         font-size: 1.5rem;
+        line-height:2.1rem;
     }
         
     h4 {

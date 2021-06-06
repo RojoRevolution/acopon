@@ -5,13 +5,6 @@
 @import './side-nav';
 
 // Mixin works like a function - you can then pass this mixin into a css element and it will take all the properties. For some reason this needs to be above import
-// @mixin flexCenter($direction, $align) {
-//     display: flex;
-//     justify-content: center;
-//     align-items: $align;
-//     flex-direction: $direction; //You can pass in variables like a function
-// }
-
 @mixin centerAbsolute() {
   position: absolute;
   margin-left: auto;
@@ -20,7 +13,6 @@
   right: 0;
   text-align: center;
 }
-
 
 // =========================
 // Universal Elements
@@ -93,7 +85,7 @@ a:hover {
   
 p {
   font-family: $spectral;
-  font-size: 16px;
+  font-size: 1.1rem;
   color: $primaryGrey;
   line-height: 1.5em;
   margin-top: 0px;
