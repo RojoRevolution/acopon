@@ -71,7 +71,7 @@ h3 {
   
 h4 {
   font-family: $merriweather;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: $primaryGrey;
   text-align: left;
@@ -156,16 +156,15 @@ main {
 
 // =========================
 // Header
-// =========================
-  
+// ========================= 
 header {
   position: fixed;
   width: 100%;
   z-index: 10;
-    //   Simply include the mix in at the top of the class
-    // @include flexCenter(row);
+  //   Simply include the mix in at the top of the class
+  // @include flexCenter(row);
      
-      //@extend nav; this will take the classes from a different item
+  //@extend nav; this will take the classes from a different item
   nav{
     ul {
       margin:0;
@@ -223,10 +222,10 @@ header {
 // =========================
 // Intro Section
 // =========================
-
 .introBg {
   background: url('../images/home_bg.png') center/cover no-repeat fixed;
   height: 100vh;
+  min-height: 820px;
 }
 
 .logo {
@@ -251,7 +250,6 @@ header {
 // =========================
 // About Section
 // =========================
-
 .aboutBG {
   background: $bgLight;
 }
@@ -264,13 +262,9 @@ header {
   max-width: 375px;
 }
 
-
 // =========================
 // Location
 // =========================
-
-
-
 #location h2 {
   font-size: 2rem;
   text-transform: none;
@@ -318,7 +312,6 @@ header {
   margin: 0 auto;
 }
 
-
 .preFooter {
   padding: 100px 0;
   background: url("../images/Footer.png") center bottom no-repeat;
@@ -353,6 +346,7 @@ footer {
   top:-35px;
 }
 
-
-// MEDIA QUERIES
+// =========================
+// Media Queries
+// =========================
 @import './mediaQueries';

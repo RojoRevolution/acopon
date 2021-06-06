@@ -4,7 +4,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  #primary-nav {
+  header {
     display: none;
   }
 
@@ -33,13 +33,54 @@
   }
 }
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    max-width: 350px;
+  }
+
+  .introText {
+    top: 545px;
+  }
+
   .mapCol {
     width: 490px;
   }
 }
 @media screen and (max-width: 500px) {
+  .introBg {
+    min-height: 650px;
+  }
+
+  .logo {
+    max-width: 300px;
+    top: 110px;
+  }
+
+  .introText {
+    top: 425px;
+  }
+
   .mapCol {
     width: 400px;
+  }
+
+  .preFooter {
+    background-size: contain;
   }
 }
 @media screen and (max-width: 400px) {

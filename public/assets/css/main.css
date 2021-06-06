@@ -204,7 +204,7 @@
   }*/
 }
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   left: 20px;
   top: 20px;
   display: none;
@@ -232,13 +232,13 @@
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: #111;
+  background-color: #3E3F55;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 60px;
   /* Place content 60px from the top */
-  transition: 0.5s;
+  transition: 0.3s ease-out;
   /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -246,13 +246,14 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #F9F9F9;
   display: block;
-  transition: 0.3s;
+  transition: 0.2s;
+  margin: 20px 0;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #696a8f;
 }
 
 .sidenav .closebtn {
@@ -310,7 +311,7 @@ h3 {
 
 h4 {
   font-family: "Merriweather", "Georgia", serif;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #4A4A4A;
   text-align: left;
@@ -452,6 +453,7 @@ header nav ul li a:hover {
 .introBg {
   background: url("../images/home_bg.png") center/cover no-repeat fixed;
   height: 100vh;
+  min-height: 820px;
 }
 
 .logo {
@@ -582,7 +584,7 @@ footer p {
   }
 }
 @media screen and (max-width: 768px) {
-  #primary-nav {
+  header {
     display: none;
   }
 
@@ -611,13 +613,54 @@ footer p {
   }
 }
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    max-width: 350px;
+  }
+
+  .introText {
+    top: 545px;
+  }
+
   .mapCol {
     width: 490px;
   }
 }
 @media screen and (max-width: 500px) {
+  .introBg {
+    min-height: 650px;
+  }
+
+  .logo {
+    max-width: 300px;
+    top: 110px;
+  }
+
+  .introText {
+    top: 425px;
+  }
+
   .mapCol {
     width: 400px;
+  }
+
+  .preFooter {
+    background-size: contain;
   }
 }
 @media screen and (max-width: 400px) {

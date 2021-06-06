@@ -24,11 +24,6 @@
 <body>
     <header class="wrapper">
         <div class="headerGradient hide"></div>
-        <div class="mobile-menu">
-            <span class="openbtn">
-                <i class="fas fa-bars"></i>
-            </span>
-        </div>
         <div class="container">
             <nav id="mainNav">
                 <ul>
@@ -49,12 +44,17 @@
         </div>
     </header>
     <!-- Mobile Nav -->
+    <div id="mobile-menu-btn" class="mobile-menu">
+        <span class="openbtn">
+            <i class="fas fa-bars"></i>
+        </span>
+    </div>
     <div id="mobile-menu" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Location</a>
-        <a href="#">Beer</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="return false;">&times;</a>
+        <a class="home" href="/" onclick="return false;">Home</a>
+        <a class="about" href="#about" onclick="return false;">About</a>
+        <a class="location" href="#locationSection" onclick="return false;">Location</a>
+        <a class="onTap" href="#onTapSection" onclick="return false;">Beer</a>
     </div>
     <main>
         <!-- Intro -->
@@ -140,7 +140,7 @@
         <section id="onTap" class="wrapper py-150">
             <div class="container grid">
                 <div class="px-20 col-1">
-                    <div id="menu-container"></div>
+                    <!-- <div id="menu-container"></div> -->
                 </div>
             </div>
         </section>

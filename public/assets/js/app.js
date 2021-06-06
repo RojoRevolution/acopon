@@ -5,10 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const sloganText = document.querySelector(".introText");
     const navItems = document.getElementById("mainNav");
     const headerLogoEl = document.getElementById("headerLogo");
-    const orderNavItem = document.querySelector(".order");
-    const orderNavId = document.getElementsByName("orderNavId");
-    const orderMenu = document.getElementById("orderMenu");
-    const dropDownMenu = document.querySelector(".orderDropDown");
+
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const sideMenu = document.querySelector('.sidenav')
+    const closeBtn = document.querySelector('.closebtn')
+
 
     // Content Elements
     const home = document.getElementById("home")
@@ -31,16 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Event listener for all nav items using event delegation
     navItems.addEventListener('click', (event) => {
-        console.log(event.className)
+        // console.log(event.className)
         let navItem = event.target.parentElement.className;
-        console.log(navItem)
+        // console.log(navItem)
         switch (navItem) {
             case "home":
                 window.scrollTo(0, findPos(home))
                 break;
             case "about":
                 window.scrollTo(0, findPos(about))
-                // window.scrollTo(0, 500)
                 break;
             case "location":
                 window.scrollTo(0, findPos(location))
@@ -69,17 +70,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
-    // orderNavItem.addEventListener('click', (event) => {
-    //     console.log(event.target.id)
-    //     orderMenu.classList.toggle('hide');
+    mobileMenuBtn.addEventListener('click', () => {
+        sideMenu.style.width = "250px";
+    });
 
-    // });
+    closeBtn.addEventListener('click', () => {
+        sideMenu.style.width = "0px"
+    });
 
-    // if (!orderMenu.classList.contains('hide')) {
-    //     window.addEventListener('click', () => {
-    //         console.log("CLICK")
-    //         orderMenu.classList.toggle('hide');
-    //     })
-    // }
+    mobileMenu.addEventListener('click', (event) => {
+        let mobileNavItem = event.target.className;
+        console.log(mobileNavItem)
+        switch (mobileNavItem) {
+            case "home":
+                window.scrollTo(0, findPos(home))
+                sideMenu.style.width = "0px"
+                break;
+            case "about":
+                sideMenu.style.width = "0px"
+                window.scrollTo(0, findPos(about))
+                break;
+            case "location":
+                sideMenu.style.width = "0px"
+                window.scrollTo(0, findPos(location))
+                break;
+            case "onTap":
+                sideMenu.style.width = "0px"
+                window.scrollTo(0, findPos(onTap))
+                break;
+        }
+    })
 
 });
