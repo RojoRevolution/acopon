@@ -302,6 +302,11 @@ header {
   margin: 0 auto;
 }
 
+// Disable Untapped Menu Links
+.item-title-color {
+  pointer-events: none;
+}
+
 .preFooter {
   padding: 100px 0;
   background: url("../images/Footer.png") center bottom no-repeat;
