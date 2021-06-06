@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RojoRevolution">
+    <meta name="description"
+        content="Brewpub on historic Mercer Street in Dripping Springs, Tx. Acopon Brewing Co. specializes in English style ales, fresh casks, and modern American craft beer." />
+    <title>Acopon Brewing Co. | Brewpub on Historic Mercer Street</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Spectral:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="wrapper">
+        <div class="headerGradient hide"></div>
+        <div class="container">
+            <nav id="mainNav">
+                <ul>
+                    <li id="primary-nav" class="home"><a href="/" onclick="return false;">Home</a></li>
+                    <li id="primary-nav" class="about"><a href="#about" onclick="return false;">About</a></li>
+                    <li class="home">
+                        <img id="headerLogo" src="assets/images/acopon_header@2x.png" alt="Acopon Brewing Co. Logo"
+                            class="hide headerLogo img">
+                    </li>
+                    <li id="primary-nav" class="location"><a href="#locationSection"
+                            onclick="return false;">Location</a>
+                    </li>
+                    <li id="primary-nav" class="onTap"><a href="#onTapSection" onclick="return false;">Beer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="mobile-menu-btn" class="mobile-menu">
+        <span class="openbtn">
+            <i class="fas fa-bars"></i>
+        </span>
+    </div>
+    <div id="mobile-menu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="return false;">&times;</a>
+        <a class="home" href="/" onclick="return false;">Home</a>
+        <a class="about" href="#about" onclick="return false;">About</a>
+        <a class="location" href="#locationSection" onclick="return false;">Location</a>
+        <a class="onTap" href="#onTapSection" onclick="return false;">Beer</a>
+    </div>
+    <main>
+        <!-- Intro -->
+        <section id="home" class="wrapper introBg">
+            <div class="container">
+                <div class="logo">
+                    <img id="logoIcon" src="assets/images/acopon_icon.png" class="img"
+                        alt="Acopon Brewing Co. Logo Icon">
+                    <img id="logoText" src="assets/images/acopon_logo_text.png" class="img"
+                        alt="Acopon Brewing Co. Logo Text">
+                </div>
+                <div class="introText">
+                    <h1> Ales To Restore The Spirit</h1>
+                    <div class="social disp-inline"><a href="https://www.facebook.com/acoponbrewing" target="_blank"
+                            rel="noopener noreferrer"><img class="socialImg"
+                                src="./assets/images/instagram_sprite_intro.svg"></a>
+                    </div>
+                    <div class="social disp-inline"><a href="https://www.instagram.com/acoponbrewing/" target="_blank"
+                            rel="noopener noreferrer"><img class="socialImg"
+                                src="./assets/images/fb_sprite_intro.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="wrapper aboutBG py-150">
+            <div class="container grid">
+                <div class="px-20 col-2-left aboutContent">
+                    <h2>Acopon</h2>
+                    <h3>(ak’-o-pon)A restorative, or cordial medicine or application.</h3>
+                    <p>A long time ago on an island across the pond, when US craft beer was still in its formative
+                        years, we fell in love with traditional English ales. Bitters, Milds, Old Ales, Porters, best
+                        when fresh from a cask!<br><br>
+
+                        At Acopon Brewing Co., English ales are our specialty, and we tap fresh casks every week. That’s
+                        not to say English ales are all we ever brew. Good beer is good beer. We love everything from
+                        hoppy west-coast style IPA' s to big bold Russian Imperial Stouts, and you’ll find them all on
+                        tap at Acopon.<br><br>
+
+                        Stop by for an ale to restore your mind, body and spirit.</p>
+                </div>
+                <div class="px-20 col-2-right aboutImg">
+                    <img src="assets/images/about2.png" class="img" alt="Pint glass of delicious beer">
+                </div>
+            </div>
+        </section>
+        <!-- Location -->
+        <section id="location" class="wrapper locationSection py-150">
+            <div class="container grid">
+                <div class="col-1 location-intro">
+                    <h2>Find us on Historic Mercer St. in Dripping Springs, TX</h2>
+                    <p>We are a pet
+                        friendly brewpub, with Wood Fired
+                        Pizza available from Sauce It Up.</p>
+                </div>
+                <div class="px-20 col-2-left mapCol">
+                    <div class="map-responsive">
+                        <div id="map">
+                            <!-- Google Maps Appears in this Div -->
+                        </div>
+                    </div>
+                </div>
+                <div class="px-20 col-2-right">
+                    <h3>Address:</h3>
+                    <p><a href="https://www.google.com/maps/place/211+W+Mercer+St,+Dripping+Springs,+TX+78620/@30.1925417,-98.091295,17z/data=!3m1!4b1!4m5!3m4!1s0x865b4178b74f8ead:0x1a60463a75ad603d!8m2!3d30.1925371!4d-98.0891063"
+                            target="_blank">211 W. Mercer St., Dripping Springs, TX 78620</a></p>
+                    <h3>Hours:</h3>
+                    <p>
+                        <b>Mon-Tues:</b> Closed <br>
+                        <b>Wed-Thurs:</b> 2pm-8pm<br>
+                        <b>Fri-Sat:</b> 12pm-8pm<br>
+                        <b>Sun:</b> 1pm-6pm
+                    </p>
+                    <p>
+                        Tap room and both patios open for onsite service and to-go orders.
+                    </p>
+                    <h3>Inquiries:</h3>
+                    <p>Email us at: <a href="mailto:info@acoponbrewing.com" target="_top">info@acoponbrewing.com</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- On Tap -->
+        <section id="onTap" class="wrapper py-150">
+            <div class="container grid">
+                <div class="px-20 col-1">
+                    <div id="menu-container"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="preFooter"></div>
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <div class="disp-inline">
+                    <div class="social"><a href="https://www.facebook.com/acoponbrewing" target="_blank"
+                            rel="noopener noreferrer"><img class="socialImg"
+                                src="./assets/images/instagram_sprite_footer.svg"></a>
+                    </div>
+                </div>
+                <div class="disp-inline">
+                    <div class="social"><a href="https://www.instagram.com/acoponbrewing/" target="_blank"
+                            rel="noopener noreferrer"><img class="socialImg"
+                                src="./assets/images/fb_sprite_footer.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <ul class="footer-nav">
+                <li class="footer-li"><a href="">Home</a></li>
+                <li class="footer-li"><a href="">About</a></li>
+                <li class="footer-li"><a href="">Location</a></li>
+                <li class="footer-li"><a href="">Beer</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid legal">
+            <p>©Copyright
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> Acopon Brewing Co. All Rights Reserved.<br>
+            </p>
+        </div>
+    </footer>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6SM9GDsAP59A1FUN-cOtnXV29nb4heTk&callback=initMap">
+        </script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="assets/js/age-verify.js"></script>
+    <script src="assets/js/thirdParty.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
