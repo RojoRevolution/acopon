@@ -310,13 +310,38 @@ header {
 }
 
 footer {
-  padding:2rem 0;
+  padding:2rem 0 0 0;
   background: $primaryBlue;
   p {
     text-align: center;
     font-size:.75rem;
     color: $bgLight;
+    margin: 0;
   }
+
+}
+
+.footer-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-li {
+  list-style-type: none;
+  margin: 1.5rem 0;
+  text-align: center;
+
+}
+
+.footer-li a {
+  color: $bgLight;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:.25s;
+}
+
+.footer-li a:hover {
+  color: $bgGrey;
 }
 
 .social {
@@ -336,6 +361,11 @@ footer {
 }
 .socialImg:hover {
   top:-35px;
+}
+
+.legal {
+  background-color: $darkBlue;
+  padding: 20px;
 }
 
 // =========================
