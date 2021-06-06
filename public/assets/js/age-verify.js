@@ -30,13 +30,13 @@ av_showmodal = function () {
     var modal_regret_wrapper = $('<div id="modal_regret_wrapper" class="content_wrapper" style="display:none;"></div>');
 
     // Question Content
-    var content_heading = $('<img src="../assets/images/verify.png" width="75%" style="margin-bottom:20px;"/><h2>Art Ye Over 21?</h2>');
-    var content_buttons = $('<nav><ul><li><a href="#nothing" class="av_btn av_go" rel="yes">Indubitably</a></li><li><a href="#nothing" class="av_btn av_no" rel="no">Nay, I Say</a></li></nav>');
+    var content_heading = $('<img src="../assets/images/verify.png" width="75%" style="margin-bottom:20px; padding: 10px;"/><h2>Art Ye Over 21?</h2>');
+    var content_buttons = $('<div><ul><li><a href="#nothing" class="av_btn av_go" rel="yes">Indubitably</a></li><li><a href="#nothing" class="av_btn av_no" rel="no">Nay, I Say</a></li></div>');
     var content_text = $('');
 
     // Regret Content
     var regret_heading = $('<h2>We\'re Sorry!</h2>');
-    var regret_buttons = $('<nav><small>I hit the wrong button!</small> <ul><li><a href="#nothing" class="av_btn av_go" rel="yes">I\'m old enough!</a></li></ul></nav>');
+    var regret_buttons = $('<div><small>I hit the wrong button!</small> <ul><li><a href="#nothing" class="av_btn av_go" rel="yes">I\'m old enough!</a></li></ul></div>');
     var regret_text = $('<p>You must be 21 years of age or older to enter this site.</p>');
 
     modal_content_wrapper.append(content_heading, content_buttons, content_text);

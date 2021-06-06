@@ -70,7 +70,13 @@
     }
 }
 
+// @media screen and (max-width: 687px) {
+//     #modal_content div li:first-of-type {margin:0 0 10px 0}
+//     #modal_content div li:last-of-type {margin:10px 0 0 0}
+// }
+
 @media screen and (max-width: 600px) {
+    
     h1 {
         font-size: 2rem;
     }
