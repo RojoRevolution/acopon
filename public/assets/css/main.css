@@ -118,7 +118,7 @@
   display: inline-block;
   text-align: center;
   width: 100%;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
 }
 
 #modal_content div:after {
@@ -670,6 +670,14 @@ footer p {
   }
 }
 @media screen and (max-width: 500px) {
+  #modal_content .content_wrapper {
+    max-width: 400px;
+  }
+
+  #modal_content div li {
+    margin: 10px 10px 10px 0;
+  }
+
   .introBg {
     min-height: 650px;
   }
