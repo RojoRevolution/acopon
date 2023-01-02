@@ -13,5 +13,5 @@ Acopon Brewing Co. identity, branding, iconography and site designed by RojoRevo
 ## Code
 The website was built with Node.js, HTML, SCSS, Javascript and jQuery(for the Age Verification). Also incorporates the use of the [Google Maps API](https://developers.google.com/maps), and an embedded taplist from [Untappd](https://untappd.com/) for Business.
 
-©Copyright 2021 Acopon Brewing Co. All Rights Reserved.
+©Copyright Acopon Brewing Co. All Rights Reserved.
 **This repo may not be modified or redistributed without explicit permission from the copyright holder.**
