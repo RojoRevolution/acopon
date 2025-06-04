@@ -26,6 +26,10 @@
   gap: 20px;
 }
 
+.gap-32 {
+  gap: 32px;
+}
+
 .gap-40 {
   gap: 40px;
 }
@@ -618,7 +622,8 @@ header nav ul li a:hover {
 .prefoot {
   position: relative;
 
-  img {
+  .img-div {
+    position: relative;
     z-index: 1;
   }
 
@@ -631,12 +636,125 @@ header nav ul li a:hover {
     z-index: 0;
   }
 
+  .graybg {
+    border-top: 4px solid #3E3F55;
+    background-color: #E9E9E9;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+  }
 }
+
+.speech-bubble-1,
+.speech-bubble-2 {
+  position: absolute;
+
+  .bubble {
+    position: relative;
+    background: #fff;
+    border: 3px solid #3E3F55;
+    border-radius: 20px;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3E3F55;
+    z-index: 1;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: -7px;
+    background: #3E3F55;
+    width: 40px;
+    height: 46px;
+    margin-left: 20px;
+    z-index: 0;
+  }
+
+}
+
+.speech-bubble-1 {
+  top: -0;
+  left: -110px;
+  animation: show-speech-1 8s ease-in-out infinite;
+
+  .arrow {
+    transform: skew(13deg, 41deg);
+    margin-left: 50px;
+  }
+}
+
+.speech-bubble-2 {
+  top: -0;
+  right: -80px;
+  animation: show-speech-2 8s ease-in-out infinite;
+
+  .arrow {
+    transform: skew(-13deg, -41deg);
+  }
+}
+
+@keyframes show-speech-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  45% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes show-speech-2 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  40% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  95% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+
 
 footer {
+  background: #E9E9E9;
   position: relative;
 }
-
 
 footer .brand-logo {
   max-width: 350px;
@@ -646,7 +764,7 @@ footer .brand-logo {
 footer .container {
   max-width: 100%;
   width: 100%;
-  padding: 0 24px 40px 24px;
+  padding: 40px 24px 40px 24px;
 }
 
 footer a {
@@ -662,6 +780,7 @@ footer ul {
 .footer-li {
   list-style-type: none;
   text-align: center;
+  font-weight: 700;
 }
 
 .footer-li a {
@@ -674,10 +793,6 @@ footer ul {
 .footer-li a:hover {
   opacity: .5;
 }
-
-/* .f-divider {
-  border-top: 1px solid #444;
-} */
 
 .social {
   margin: 5px;
@@ -704,19 +819,19 @@ footer ul {
 }
 
 .legal {
-  background-color: #2c2d3f;
+  border-top: 1px solid #3E3F55;
 }
 
 .legal p {
   margin: 0;
-  padding: 12px 0;
-  color: #ffffff;
+  padding: 16px 0;
+  color: #3E3F55;
   text-align: center;
   font-size: 12px;
 }
 
 .legal a {
-  color: #ffffff;
+  color: #3E3F55;
   text-decoration: none;
   transition: 0.25s;
   text-decoration: underline;
@@ -843,16 +958,33 @@ footer ul {
   }
 
   .introBg {
-    min-height: 650px;
+    min-height: 750px;
   }
 
   .logo {
     max-width: 300px;
-    top: 110px;
+    padding-top: 80px;
   }
 
   .introText {
     top: 425px;
+  }
+
+  .cask-pattern {
+    background-size: 192%;
+  }
+
+  /* .prefoot img {
+    width: 70%;
+  } */
+
+  .prefoot img {
+    width: 80%;
+  }
+
+  .speech-bubble-1,
+  .speech-bubble-2 {
+    display: none;
   }
 
   .preLegal {
@@ -865,10 +997,10 @@ footer ul {
 
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .mapCol {
     width: 370px;
   }
-}
+} */
 
 /*# sourceMappingURL=main.css.map */
