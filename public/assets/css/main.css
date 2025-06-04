@@ -539,8 +539,14 @@ header nav ul li a:hover {
   background: #E9E9E9;
 }
 
+.map-section {
+  display: flex;
+  flex-direction: row;
+}
+
 .mapCol {
-  width: 600px;
+  max-width: 700px;
+  width: 100%;
 }
 
 .map-responsive {
@@ -573,14 +579,29 @@ header nav ul li a:hover {
   background: url("../images/Footer.png") center bottom no-repeat;
 }
 
+.badges {
+  display: flex;
+  flex-direction: row;
+}
 
 .preLegal {
   padding: 120px 0;
   background: url("../images/footer_pattern.svg") center bottom repeat-x;
+  animation: move-background 40s linear infinite;
 }
 
-footer {
-  /* background: #3E3F55; */
+@keyframes move-background {
+  0% {
+    background-position: left bottom;
+  }
+
+  50% {
+    background-position: right bottom;
+  }
+
+  100% {
+    background-position: left bottom;
+  }
 }
 
 footer .brand-logo {
@@ -598,16 +619,14 @@ footer a {
   color: #3E3F55;
 }
 
-/* footer p {
-  text-align: center;
-  font-size: 0.75rem;
-  color: #3E3F55;
-  margin: 0;
-} */
 
 footer ul {
   padding: 0;
+  display: flex;
+  flex-direction: row;
 }
+
+
 
 .footer-li {
   list-style-type: none;
@@ -625,9 +644,9 @@ footer ul {
   opacity: .5;
 }
 
-.f-divider {
+/* .f-divider {
   border-top: 1px solid #444;
-}
+} */
 
 .social {
   margin: 5px;
@@ -655,7 +674,6 @@ footer ul {
 
 .legal {
   background-color: #2c2d3f;
-  padding: 12px;
 }
 
 .legal p {
@@ -677,6 +695,17 @@ footer ul {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .map-section {
+    flex-direction: column;
+  }
+
+  .mapCol {
+    width: 100%;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   header {
     display: none;
@@ -690,10 +719,10 @@ footer ul {
     margin: 0 auto;
   }
 
-  .mapCol {
+  /* .mapCol {
     width: 580px;
     margin: 0 auto;
-  }
+  } */
 
   .col-2-left {
     grid-column-start: 1;
@@ -705,6 +734,12 @@ footer ul {
     grid-column-start: 1;
     grid-column-end: 12;
   }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+
 }
 
 @media (min-width: 688px) {
@@ -736,6 +771,7 @@ footer ul {
     padding: 20px;
     margin: 0 auto;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -765,9 +801,6 @@ footer ul {
     top: 545px;
   }
 
-  .mapCol {
-    width: 490px;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -789,12 +822,12 @@ footer ul {
     top: 425px;
   }
 
-  .mapCol {
-    width: 380px;
-  }
-
   .preLegal {
     background-position: left bottom;
+  }
+
+  .badges {
+    flex-direction: column;
   }
 
 }
