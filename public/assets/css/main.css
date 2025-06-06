@@ -491,7 +491,7 @@ header nav ul li a:hover {
 }
 
 .logo {
-  padding-top: 140px;
+  padding-top: 220px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -516,6 +516,72 @@ header nav ul li a:hover {
   text-align: center;
   top: 625px;
   transition: 0.5s;
+}
+
+.extra-art {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.intro-art {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  transform: scale(1);
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards
+}
+
+
+.intro-art:first-of-type {
+  left: 0px;
+  animation-name: slide-right;
+}
+
+.intro-art:last-of-type {
+  right: 0px;
+  animation-name: slide-left;
+
+}
+
+
+@keyframes slide-right {
+  10% {
+    left: -602px;
+    opacity: 0;
+  }
+
+  20% {
+    left: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  10% {
+    right: -602px;
+    opacity: 0;
+  }
+
+  20% {
+    right: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    right: px;
+    opacity: 1;
+  }
 }
 
 .aboutBG {
