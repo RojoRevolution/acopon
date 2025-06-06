@@ -50,6 +50,10 @@
   padding-top: 50px;
 }
 
+.mt-150 {
+  margin-top: 150px;
+}
+
 .py-16 {
   padding: 16px 0;
 }
@@ -686,7 +690,9 @@ header nav ul li a:hover {
 }
 
 .prefoot {
-  position: relative;
+  position: absolute;
+  left: calc(50% - 156px);
+  top: -160px;
 
   .img-div {
     position: relative;
@@ -820,6 +826,7 @@ header nav ul li a:hover {
 footer {
   background: #E9E9E9;
   position: relative;
+  border-top: 4px solid #3E3F55;
 }
 
 footer .brand-logo {
@@ -828,9 +835,13 @@ footer .brand-logo {
 }
 
 footer .container {
-  max-width: 100%;
-  width: 100%;
+  /* max-width: 1200px%; */
+  /* width: 100%; */
   padding: 40px 24px 40px 24px;
+}
+
+footer>.container>.flex-row>.flex-column {
+  width: 317px;
 }
 
 footer a {
@@ -894,6 +905,7 @@ footer ul {
   color: #3E3F55;
   text-align: center;
   font-size: 12px;
+  font-weight: 700;
 }
 
 .legal a {
@@ -903,7 +915,32 @@ footer ul {
   text-decoration: underline;
 }
 
+
+@media screen and (max-width: 1200px) {
+  .intro-art {
+    max-width: 500px;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  footer>.container {
+    padding-top: 170px;
+  }
+
+  footer>.container>.flex-row {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+}
+
 @media screen and (max-width: 1024px) {
+  .intro-art {
+    max-width: 400px;
+  }
+
   .mapCol {
     width: 450px;
   }
@@ -931,6 +968,10 @@ footer ul {
 
   .aboutImg {
     margin: 0 auto;
+  }
+
+  .intro-art {
+    max-width: 375px;
   }
 
   /* .mapCol {
@@ -1024,6 +1065,7 @@ footer ul {
   }
 
   .introBg {
+    background: url("../images/homebg_400.jpg") center/cover no-repeat fixed;
     min-height: 750px;
   }
 
@@ -1063,10 +1105,34 @@ footer ul {
 
 }
 
-/* @media screen and (max-width: 400px) {
-  .mapCol {
-    width: 370px;
+@media screen and (max-width: 450px) {
+  .intro-art:first-of-type {
+    width: 450px;
   }
-} */
 
-/*# sourceMappingURL=main.css.map */
+  @keyframes slide-right {
+    10% {
+      left: -602px;
+      opacity: 0;
+    }
+
+    20% {
+      left: 0px;
+      opacity: .85;
+    }
+
+    100% {
+      left: 0px;
+      opacity: .85;
+    }
+  }
+
+
+  .intro-art:last-of-type {
+    width: 450px;
+  }
+
+  footer>.container {
+    padding-top: 130px;
+  }
+}
