@@ -531,9 +531,9 @@ header nav ul li a:hover {
 
 .intro-art {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   bottom: 0;
-  transform: scale(1);
+  /* transform: scale(1);
   -webkit-animation-delay: .5s;
   -webkit-animation-delay: .5s;
   -webkit-animation-duration: 3s;
@@ -544,20 +544,20 @@ header nav ul li a:hover {
   animation-duration: 3s;
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards */
 }
 
 
 .intro-art:first-of-type {
   left: 0px;
-  -webkit-animation-name: slide-right;
-  animation-name: slide-right;
+  /* -webkit-animation-name: slide-right;
+  animation-name: slide-right; */
 }
 
 .intro-art:last-of-type {
   right: 0px;
-  -webkit-animation-name: slide-left;
-  animation-name: slide-left;
+  /* -webkit-animation-name: slide-left;
+  animation-name: slide-left; */
 
 }
 
@@ -650,44 +650,15 @@ header nav ul li a:hover {
   margin: 20px 0;
 }
 
-.cask-pattern {
+/* .cask-pattern {
   padding: 120px 0;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   background: url("../images/footer_pattern.svg") center bottom repeat-x;
-  -webkit-animation: move-background 40s linear infinite;
-  animation: move-background 40s linear infinite;
-}
+} */
 
-@-webkit-keyframes move-background {
-  0% {
-    background-position: left bottom;
-  }
-
-  50% {
-    background-position: right bottom;
-  }
-
-  100% {
-    background-position: left bottom;
-  }
-}
-
-@keyframes move-background {
-  0% {
-    background-position: left bottom;
-  }
-
-  50% {
-    background-position: right bottom;
-  }
-
-  100% {
-    background-position: left bottom;
-  }
-}
 
 .location-intro {
   padding: 0 0 2rem 0;
@@ -805,10 +776,11 @@ header nav ul li a:hover {
 }
 
 .speech-bubble-1 {
+  display: none;
   top: -0;
   left: -110px;
-  -webkit-animation: show-speech-1 8s ease-in-out infinite;
-  animation: show-speech-1 8s ease-in-out infinite;
+  /* -webkit-animation: show-speech-1 8s ease-in-out infinite;
+  animation: show-speech-1 8s ease-in-out infinite; */
 
   .arrow {
     transform: skew(13deg, 41deg);
@@ -817,10 +789,11 @@ header nav ul li a:hover {
 }
 
 .speech-bubble-2 {
+  display: none;
   top: -0;
   right: -80px;
-  -webkit-animation: show-speech-2 8s ease-in-out infinite;
-  animation: show-speech-2 8s ease-in-out infinite;
+  /* -webkit-animation: show-speech-2 8s ease-in-out infinite;
+  animation: show-speech-2 8s ease-in-out infinite; */
 
   .arrow {
     transform: skew(-13deg, -41deg);
@@ -1220,6 +1193,10 @@ footer ul {
 }
 
 @media screen and (max-width: 450px) {
+  .logo {
+    padding-top: 40px;
+  }
+
   .intro-art:first-of-type {
     width: 450px;
   }
