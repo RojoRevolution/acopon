@@ -534,6 +534,12 @@ header nav ul li a:hover {
   opacity: 0;
   bottom: 0;
   transform: scale(1);
+  -webkit-animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 1;
+  -webkit- animation-fill-mode: forwards;
   animation-delay: .5s;
   animation-duration: 3s;
   animation-timing-function: ease-out;
@@ -544,15 +550,35 @@ header nav ul li a:hover {
 
 .intro-art:first-of-type {
   left: 0px;
+  -webkit-animation-name: slide-right;
   animation-name: slide-right;
 }
 
 .intro-art:last-of-type {
   right: 0px;
+  -webkit-animation-name: slide-left;
   animation-name: slide-left;
 
 }
 
+
+
+@-webkit-keyframes slide-right {
+  10% {
+    left: -602px;
+    opacity: 0;
+  }
+
+  20% {
+    left: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
 
 @keyframes slide-right {
   10% {
@@ -567,6 +593,23 @@ header nav ul li a:hover {
 
   100% {
     left: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  10% {
+    right: -602px;
+    opacity: 0;
+  }
+
+  20% {
+    right: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    right: px;
     opacity: 1;
   }
 }
@@ -614,7 +657,22 @@ header nav ul li a:hover {
   left: 0;
   width: 100%;
   background: url("../images/footer_pattern.svg") center bottom repeat-x;
+  -webkit-animation: move-background 40s linear infinite;
   animation: move-background 40s linear infinite;
+}
+
+@-webkit-keyframes move-background {
+  0% {
+    background-position: left bottom;
+  }
+
+  50% {
+    background-position: right bottom;
+  }
+
+  100% {
+    background-position: left bottom;
+  }
 }
 
 @keyframes move-background {
@@ -749,6 +807,7 @@ header nav ul li a:hover {
 .speech-bubble-1 {
   top: -0;
   left: -110px;
+  -webkit-animation: show-speech-1 8s ease-in-out infinite;
   animation: show-speech-1 8s ease-in-out infinite;
 
   .arrow {
@@ -760,10 +819,38 @@ header nav ul li a:hover {
 .speech-bubble-2 {
   top: -0;
   right: -80px;
+  -webkit-animation: show-speech-2 8s ease-in-out infinite;
   animation: show-speech-2 8s ease-in-out infinite;
 
   .arrow {
     transform: skew(-13deg, -41deg);
+  }
+}
+
+@-webkit-keyframes show-speech-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  45% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
   }
 }
 
@@ -786,6 +873,33 @@ header nav ul li a:hover {
   45% {
     opacity: 0;
     transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@-webkit-keyframes show-speech-2 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  40% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  95% {
+    opacity: 1;
+    transform: scale(1);
   }
 
   100% {
@@ -1108,6 +1222,23 @@ footer ul {
 @media screen and (max-width: 450px) {
   .intro-art:first-of-type {
     width: 450px;
+  }
+
+  @-webkit-keyframes slide-right {
+    10% {
+      left: -602px;
+      opacity: 0;
+    }
+
+    20% {
+      left: 0px;
+      opacity: .85;
+    }
+
+    100% {
+      left: 0px;
+      opacity: .85;
+    }
   }
 
   @keyframes slide-right {
