@@ -3,6 +3,7 @@
     width: 450px;
   }
 }
+
 @media screen and (max-width: 768px) {
   header {
     display: none;
@@ -32,6 +33,7 @@
     grid-column-end: 12;
   }
 }
+
 @media (min-width: 688px) {
   #modal_content {
     top: 30vh;
@@ -62,6 +64,7 @@
     margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 2rem;
@@ -93,6 +96,7 @@
     width: 490px;
   }
 }
+
 @media screen and (max-width: 500px) {
   #modal_content .content_wrapper {
     max-width: 400px;
@@ -118,11 +122,14 @@
   }
 
   .preFooter {
-    background-size: contain;
+    background-position: left bottom;
   }
 }
+
 @media screen and (max-width: 400px) {
   .mapCol {
     width: 370px;
   }
-}/*# sourceMappingURL=mediaQueries.css.map */
+}
+
+/*# sourceMappingURL=mediaQueries.css.map */

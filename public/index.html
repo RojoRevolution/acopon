@@ -78,7 +78,7 @@
     </div>
     <main>
         <!-- Intro -->
-        <section id="home" class="wrapper introBg">
+        <section id="home" class="wrapper introBg pos-relative">
             <div class="container">
                 <div class="logo">
                     <img id="logoIcon" src="assets/images/acopon_icon.png" class="img"
@@ -98,6 +98,13 @@
                     </div>
                 </div>
             </div>
+
+            <img class="intro-art" src="assets/images/intro-artwork-left.svg" class="img"
+                alt="Illustration of a Cask with hops and barley surrounding it.">
+            <img class="intro-art" src="assets/images/intro-artwork-right.svg" class="img"
+                alt="Illustration of a Cask with hops and barley surrounding it.">
+
+            <!-- <div class="cask-pattern"></div> -->
         </section>
         <section id="about" class="wrapper aboutBG py-150">
             <div class="container grid">
@@ -126,7 +133,7 @@
         </section>
         <!-- Location -->
         <section id="location" class="wrapper locationSection py-150">
-            <div class="container grid">
+            <div class="container">
                 <div class="col-1 location-intro">
                     <h2>Find us on Historic Mercer St. in Dripping Springs, TX</h2>
                     <p>We are a pet
@@ -134,28 +141,31 @@
                         Our tap room and patio is open for onsite service and to-go orders.
                     </p>
                 </div>
-                <div class="px-20 col-2-left mapCol">
-                    <div class="map-responsive">
-                        <div id="map">
-                            <!-- Google Maps Appears in this Div -->
+                <div class="map-section justify-between gap-20">
+                    <div class="px-20 col-2-left mapCol">
+                        <div class="map-responsive">
+                            <div id="map">
+                                <!-- Google Maps Appears in this Div -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="px-20 col-2-right">
-                    <h3>Address:</h3>
-                    <p><a href="https://www.google.com/maps/place/Acopon+Brewing+Co./@30.1925417,-98.091295,17z/data=!3m1!4b1!4m5!3m4!1s0x865b4178b7457b6d:0x7b88bb979a69756a!8m2!3d30.1926078!4d-98.0891114"
-                            target="_blank">211 W. Mercer St., Dripping Springs, TX 78620</a></p>
-                    <h3>Hours:</h3>
-                    <p>
-                        <b>Mon-Thurs:</b> 2pm-8pm <br>
-                        <b>Fri-Sat:</b> 12pm-8pm<br>
-                        <b>Sun:</b> 12pm-6pm
-                    </p>
-                    <h3>Grub:</h3>
-                    <p><a href="https://www.instagram.com/whitehart_on_mercer" target="_blank" rel="noreferrer">The
-                            White Hart</a> is open Thurs-Sun on the front patio. </p>
-                    <h3>Inquiries:</h3>
-                    <p>Email us at: <a href="mailto:info@acoponbrewing.com" target="_top">info@acoponbrewing.com</a></p>
+                    <div class="col-2-right">
+                        <h3>Address:</h3>
+                        <p><a href="https://www.google.com/maps/place/Acopon+Brewing+Co./@30.1925417,-98.091295,17z/data=!3m1!4b1!4m5!3m4!1s0x865b4178b7457b6d:0x7b88bb979a69756a!8m2!3d30.1926078!4d-98.0891114"
+                                target="_blank">211 W. Mercer St., Dripping Springs, TX 78620</a></p>
+                        <h3>Hours:</h3>
+                        <p>
+                            <b>Mon-Thurs:</b> 2pm-8pm <br>
+                            <b>Fri-Sat:</b> 12pm-8pm<br>
+                            <b>Sun:</b> 12pm-6pm
+                        </p>
+                        <h3>Grub:</h3>
+                        <p><a href="https://www.instagram.com/whitehart_on_mercer" target="_blank" rel="noreferrer">The
+                                White Hart</a> is open Thurs-Sun on the front patio. </p>
+                        <h3>Inquiries:</h3>
+                        <p>Email us at: <a href="mailto:info@acoponbrewing.com" target="_top">info@acoponbrewing.com</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -168,36 +178,97 @@
             </div>
         </section>
     </main>
-    <div class="preFooter"></div>
-    <footer>
-        <div class="container">
-            <div class="text-center">
-                <div class="disp-inline">
-                    <div class="social"><a href="https://www.instagram.com/acoponbrewing/" target="_blank"
-                            rel="noopener noreferrer"><img class="socialImg"
-                                src="./assets/images/instagram_sprite_footer.svg"></a>
+    <!-- <div class="preFooter"></div> -->
+    <!-- <div class="prefoot flex-row justify-center">
+        <div class="img-div flex-row onjustify-center">
+            <div class="speech-bubble-1">
+                <div class="pos-relative">
+                    <div class="bubble">
+                        Cheers!
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+            <img src="./assets/images/cheers-doctor.svg" alt="Image of a Plague Doctor Raising a Glass of Beer">
+            <div class="speech-bubble-2">
+                <div class="pos-relative">
+                    <div class="bubble">
+                        Prost!
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="graybg"></div>
+    </div> -->
+    <footer class="pos-relative mt-150">
+        <div class="prefoot flex-row">
+            <div class="img-div flex-row justify-center">
+                <div class="speech-bubble-1">
+                    <div class="pos-relative">
+                        <div class="bubble">
+                            Cheers!
+                        </div>
+                        <div class="arrow"></div>
                     </div>
                 </div>
-                <div class="disp-inline">
-                    <div class="social"><a href="https://www.facebook.com/acoponbrewing" target="_blank"
-                            rel="noopener noreferrer"><img class="socialImg"
-                                src="./assets/images/fb_sprite_footer.svg"></a>
+                <img src="./assets/images/cheers-doctor.svg" alt="Image of a Plague Doctor Raising a Glass of Beer">
+                <div class="speech-bubble-2">
+                    <div class="pos-relative">
+                        <div class="bubble">
+                            Prost!
+                        </div>
+                        <div class="arrow"></div>
                     </div>
                 </div>
             </div>
-            <ul class="footer-nav">
-                <li class="footer-li"><a href="">Home</a></li>
-                <li class="footer-li"><a href="">About</a></li>
-                <li class="footer-li"><a href="">Location</a></li>
-                <li class="footer-li"><a href="">Beer</a></li>
-            </ul>
         </div>
-        <div class="container-fluid legal">
+        <div class="container">
+            <div class="flex-row justify-between align-center">
+                <div class="flex-column">
+                    <ul class="footer-nav justify-center gap-20">
+                        <li class="footer-li"><a href="#home">Home</a></li>
+                        <li class="footer-li"><a href="#about">About</a></li>
+                        <li class="footer-li"><a href="#location">Location</a></li>
+                        <li class="footer-li"><a href="#onTap">Beer</a></li>
+                    </ul>
+                    <div class="flex-row justify-center">
+                        <div class="disp-inline">
+                            <div class="social"><a href="https://www.instagram.com/acoponbrewing/" target="_blank"
+                                    rel="noopener noreferrer"><img class="socialImg"
+                                        src="./assets/images/instagram_sprite_footer.svg"></a>
+                            </div>
+                        </div>
+                        <div class="disp-inline">
+                            <div class="social"><a href="https://www.facebook.com/acoponbrewing" target="_blank"
+                                    rel="noopener noreferrer"><img class="socialImg"
+                                        src="./assets/images/fb_sprite_footer.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-column align-center gap-20">
+                    <div class="badges align-center justify-center gap-32">
+                        <a href="https://cask-marque.co.uk/" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/images/cask-marquee-inspected.svg" style="width:139px"
+                                alt="Cask Marquee Certified Logo"></a>
+                        <a href="https://www.brewersassociation.org/" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/images/independent_craft_1color.svg" alt="Cask Marquee Logo"
+                                style="width:62px"></a>
+                        <a href="https://texascraftbrewersguild.org/" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/images/texas-craft-brewers-guild-logo.webp"
+                                alt="Certified Independant Craft" style="width: 108px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="flex-column legal">
             <p>©Copyright
                 <script type="text/javascript">
                     document.write(new Date().getFullYear());
-                </script> Acopon Brewing Co. All Rights Reserved. Designed and built by <a style="color:#fff"
-                    href="https://rojorevolution.com" target="_blank" rel="noopener noreferrer">RojoRevolution</a>
+                </script> Acopon Brewing Co. All Rights Reserved. Website by <a href="https://rojorevolution.com"
+                    target="_blank" rel="noopener noreferrer">RojoRevolution</a>.
             </p>
         </div>
     </footer>
