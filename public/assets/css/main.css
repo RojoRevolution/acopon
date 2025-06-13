@@ -1152,7 +1152,7 @@ footer ul {
   }
 
   .introBg {
-    background: url("../images/homebg_400.jpg") center/cover no-repeat fixed;
+    background: url("../images/homebg_400.jpg") center/cover no-repeat scroll;
     min-height: 750px;
   }
 
