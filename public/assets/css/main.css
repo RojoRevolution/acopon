@@ -533,32 +533,40 @@ header nav ul li a:hover {
   position: absolute;
   opacity: 1;
   bottom: 0;
-  /* transform: scale(1);
+  transform: scale(1);
   -webkit-animation-delay: .5s;
   -webkit-animation-delay: .5s;
   -webkit-animation-duration: 3s;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-iteration-count: 1;
-  -webkit- animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
   animation-delay: .5s;
   animation-duration: 3s;
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards */
+  animation-fill-mode: forwards
 }
 
 
 .intro-art:first-of-type {
   left: 0px;
-  /* -webkit-animation-name: slide-right;
-  animation-name: slide-right; */
+  -webkit-animation-name: slide-right;
+  animation-name: slide-right;
 }
 
 .intro-art:last-of-type {
   right: 0px;
-  /* -webkit-animation-name: slide-left;
-  animation-name: slide-left; */
+  -webkit-animation-name: slide-left;
+  animation-name: slide-left;
+}
 
+.intro-art-mobile {
+  display: none;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  bottom: 0;
 }
 
 
@@ -649,15 +657,6 @@ header nav ul li a:hover {
   letter-spacing: normal;
   margin: 20px 0;
 }
-
-/* .cask-pattern {
-  padding: 120px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: url("../images/footer_pattern.svg") center bottom repeat-x;
-} */
 
 
 .location-intro {
@@ -776,11 +775,11 @@ header nav ul li a:hover {
 }
 
 .speech-bubble-1 {
-  display: none;
+  /* display: none; */
   top: -0;
   left: -110px;
-  /* -webkit-animation: show-speech-1 8s ease-in-out infinite;
-  animation: show-speech-1 8s ease-in-out infinite; */
+  -webkit-animation: show-speech-1 8s ease-in-out infinite;
+  animation: show-speech-1 8s ease-in-out infinite;
 
   .arrow {
     transform: skew(13deg, 41deg);
@@ -789,11 +788,11 @@ header nav ul li a:hover {
 }
 
 .speech-bubble-2 {
-  display: none;
+  /* display: none; */
   top: -0;
   right: -80px;
-  /* -webkit-animation: show-speech-2 8s ease-in-out infinite;
-  animation: show-speech-2 8s ease-in-out infinite; */
+  -webkit-animation: show-speech-2 8s ease-in-out infinite;
+  animation: show-speech-2 8s ease-in-out infinite;
 
   .arrow {
     transform: skew(-13deg, -41deg);
@@ -1165,13 +1164,23 @@ footer ul {
     top: 425px;
   }
 
+  .intro-art {
+    display: none;
+  }
+
+  .intro-art-mobile {
+    display: block;
+  }
+
+  .speech-bubble-1,
+  .speech-bubble-2 {
+    display: none;
+  }
+
   .cask-pattern {
     background-size: 192%;
   }
 
-  /* .prefoot img {
-    width: 70%;
-  } */
 
   .prefoot img {
     width: 80%;
