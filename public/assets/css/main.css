@@ -1206,7 +1206,7 @@ footer ul {
     padding-top: 40px;
   }
 
-  .intro-art:first-of-type {
+  /* .intro-art:first-of-type {
     width: 450px;
   }
 
@@ -1242,12 +1242,12 @@ footer ul {
       left: 0px;
       opacity: .85;
     }
-  }
+  } */
 
-
+  /* 
   .intro-art:last-of-type {
     width: 450px;
-  }
+  } */
 
   footer>.container {
     padding-top: 130px;
