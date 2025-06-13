@@ -1206,49 +1206,6 @@ footer ul {
     padding-top: 40px;
   }
 
-  /* .intro-art:first-of-type {
-    width: 450px;
-  }
-
-  @-webkit-keyframes slide-right {
-    10% {
-      left: -602px;
-      opacity: 0;
-    }
-
-    20% {
-      left: 0px;
-      opacity: .85;
-    }
-
-    100% {
-      left: 0px;
-      opacity: .85;
-    }
-  }
-
-  @keyframes slide-right {
-    10% {
-      left: -602px;
-      opacity: 0;
-    }
-
-    20% {
-      left: 0px;
-      opacity: .85;
-    }
-
-    100% {
-      left: 0px;
-      opacity: .85;
-    }
-  } */
-
-  /* 
-  .intro-art:last-of-type {
-    width: 450px;
-  } */
-
   footer>.container {
     padding-top: 130px;
   }
